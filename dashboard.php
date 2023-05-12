@@ -1,6 +1,9 @@
 <?php
+require_once("admin.php");
+header("location:admin_studenti.php");
+
 //VARIALIBI
-$titolo="Dashboard - Cyber Valley";
+$titolo = "Dashboard - Cyber Valley";
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +26,7 @@ $titolo="Dashboard - Cyber Valley";
   <!-- CSS Files -->
   <link href="paper-dashboard-master/assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="paper-dashboard-master/assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
-  
+
   <link rel="stylesheet" href="CSS/stile.css">
   <link rel="stylesheet" href="CSS/dashboard.css">
 </head>
@@ -54,19 +57,19 @@ $titolo="Dashboard - Cyber Valley";
             </a>
           </li>
           <li>
-            <a href="./ar_studente.php">
+            <a href="./admin_studenti.php">
               <i class="nc-icon nc-single-02"></i>
-              <p>Profilo Studente</p>
+              <p>Lista studenti</p>
             </a>
           </li>
           <li>
-            <a href="./ar_corsi.php">
+            <a href="./admin_corsi.php">
               <i class="nc-icon nc-tile-56"></i>
               <p>Corsi</p>
             </a>
           </li>
           <li>
-            <a href="./ar_eventi.php">
+            <a href="./admin_eventi.php">
               <i class="fa-regular fa-calendar-days"></i>
               <p>Eventi</p>
             </a>
@@ -86,7 +89,7 @@ $titolo="Dashboard - Cyber Valley";
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;"><?=$titolo?></a>
+            <a class="navbar-brand" href="javascript:;"><?= $titolo ?></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -115,7 +118,7 @@ $titolo="Dashboard - Cyber Valley";
               </li>-->
               <li class="nav-item btn-rotate dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa-sharp fa-solid fa-bars"></i>
+                  <i class="fa-sharp fa-solid fa-bars"></i>
                   <p>
                     <span class="d-lg-none d-md-block">Men&ugrave;</span>
                   </p>
@@ -139,7 +142,7 @@ $titolo="Dashboard - Cyber Valley";
         </div>
       </nav>
       <!-- End Navbar -->
-      
+
       <div class="content">
         <!--
         <div class="row">
@@ -335,32 +338,32 @@ $titolo="Dashboard - Cyber Valley";
         </div>
       </footer>
     </div>-->
-    </div>
-<?php
-require_once("footer.php")
-?>
-  
+      </div>
+      <?php
+      require_once("footer.php")
+      ?>
 
-  <!--   Core JS Files   -->
-  <script src="paper-dashboard-master/assets/js/core/jquery.min.js"></script>
-  <script src="paper-dashboard-master/assets/js/core/popper.min.js"></script>
-  <script src="paper-dashboard-master/assets/js/core/bootstrap.min.js"></script>
-  <script src="paper-dashboard-master/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Chart JS -->
-  <script src="paper-dashboard-master/assets/js/plugins/chartjs.min.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="paper-dashboard-master/assets/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="paper-dashboard-master/assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-  <script src="paper-dashboard-master/assets/demo/demo.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
-      demo.initChartsPages();
-    });
-  </script>
+
+      <!--   Core JS Files   -->
+      <script src="paper-dashboard-master/assets/js/core/jquery.min.js"></script>
+      <script src="paper-dashboard-master/assets/js/core/popper.min.js"></script>
+      <script src="paper-dashboard-master/assets/js/core/bootstrap.min.js"></script>
+      <script src="paper-dashboard-master/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+      <!--  Google Maps Plugin    -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+      <!-- Chart JS -->
+      <script src="paper-dashboard-master/assets/js/plugins/chartjs.min.js"></script>
+      <!--  Notifications Plugin    -->
+      <script src="paper-dashboard-master/assets/js/plugins/bootstrap-notify.js"></script>
+      <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+      <script src="paper-dashboard-master/assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+      <script src="paper-dashboard-master/assets/demo/demo.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
+          demo.initChartsPages();
+        });
+      </script>
 </body>
 
 </html>
